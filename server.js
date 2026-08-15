@@ -2,6 +2,11 @@ const express = require("express");
 
 const app = express();
 app.use(express.json());
+app.get("/zalo_verifierH8Ao4CU77paTguim-Pa52GYzrpRaomrkCpCq.html", (req, res) => {
+  res.type("html").send(
+    "zalo-platform-site-verification=H8Ao4CU77paTguim-Pa52GYzrpRaomrkCpCq"
+  );
+});
 
 app.get("/", (req, res) => {
   res.status(200).send("Zalo Webhook is running!");
